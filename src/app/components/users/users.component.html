@@ -1,3 +1,22 @@
-<h4 *ngFor= "let user of usersList">
-    {{ user.user_name }}
-</h4>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Prénom</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Nom d'utilisateur</th>
+                <th scope="col">Date de naissance</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let user of usersList">
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.user_name }}</td>
+                <td>{{ user.birth_date }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
