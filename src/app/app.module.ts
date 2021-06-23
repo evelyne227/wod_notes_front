@@ -10,6 +10,7 @@ import { UsersService } from './services/users.service';
 import { ServerService } from './services/server.service';
 import { HomeComponent } from './components/home/home.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
+import { BenchmarksComponent } from './components/benchmarks/benchmarks.component';
 
 
 
@@ -18,7 +19,8 @@ import { HomeContentComponent } from './components/home-content/home-content.com
     AppComponent,
     UsersComponent,
     HomeComponent,
-    HomeContentComponent
+    HomeContentComponent,
+    BenchmarksComponent
   ],
   imports: [
     BrowserModule,
