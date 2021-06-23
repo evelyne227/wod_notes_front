@@ -8,12 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { UsersService } from './services/users.service';
 import { ServerService } from './services/server.service';
+import { HomeComponent } from './components/home/home.component';
+import { HomeContentComponent } from './components/home-content/home-content.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    HomeComponent,
+    HomeContentComponent
   ],
   imports: [
     BrowserModule,

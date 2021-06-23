@@ -1,5 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightseagreen;">
+<header>
+<!-- navigation -->
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
+    <img src="./../assets/Wod_Notes_logo.png" class="logoHP" alt="Wod Notes logo">
     <a class="navbar-brand" href="#">Wod Notes</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,13 +30,23 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Connexion</a>
         </li>          
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="/users">Users</a>
-        </li>     
+        </li>      -->
       </ul>
     </div>
   </div>
 </nav>
+<!-- navigation -->
+
+<!-- content -->
 <ul class="list-group">
   <router-outlet></router-outlet>
 </ul>
+<!-- content -->
+
+<!-- footer -->
+<footer>
+  <p>© Wod Notes 2021</p>
+</footer>
+<!-- footer -->
