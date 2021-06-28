@@ -13,7 +13,7 @@ export class PrsService {
 
   public getAll(): Observable<Prs[]>
   {
-    return this.server.get<Prs[]>('prs/all/').pipe(
+    return this.server.get<Prs[]>('prs/list/').pipe(
       map(res => res.map((m: any) => new Prs(m))),
       catchError(err =>
         {

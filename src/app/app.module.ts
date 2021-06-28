@@ -20,6 +20,7 @@ import { ServerService } from './services/server.service';
 import { ExercisesService } from './services/exercises.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { Nl2brPipe } from './pipes/nl2br.pipe';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     PRsComponent,
     PersoComponent,
     ConverterComponent,
-    WeightConverterPipe
+    WeightConverterPipe,
+    Nl2brPipe
   ],
   imports: [
     BrowserModule,

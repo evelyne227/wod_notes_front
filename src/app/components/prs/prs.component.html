@@ -3,13 +3,21 @@
         <thead>
           <tr>
             <th scope="col">Date</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Exercice</th>
             <th scope="col">Résultat</th>
+            <th scope="col">Détails</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let pr of prsList">
             <td>{{ pr.date | date: 'dd/MM/yyyy' }}</td>
+            <td>{{ pr.category_name }}</td>
+            <td>{{ pr.exercise_name }}</td>
             <td>{{ pr.result }}</td>
+            <td><button class="btn btn-outline-dark">Progression</button><br><button class="btn btn-outline-dark">Pourcentages</button></td>
+            <td><button class="btn btn-outline-dark">Modifier</button><br><button class="btn btn-outline-dark">Supprimer</button></td>
           </tr>
         </tbody>
       </table>

@@ -5,6 +5,7 @@ export class WodPerso
     created_at: Date; 
     category_id: number;
     unit_id: number;
+    unit_name: string;
     user_id: number;
     description: string;
 
@@ -15,6 +16,7 @@ export class WodPerso
         this.created_at = data.created_at;
         this.category_id = data.category_id;
         this.unit_id = data.unit_id;
+        this.unit_name = data.unit_name;
         this.user_id = data.user_id;
         this.description = data.description;
     }

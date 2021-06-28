@@ -2,20 +2,20 @@
   <table class="table">
       <thead>
         <tr>
-          <th scope="col">Nom</th>
           <th scope="col">Date de création</th>
-          <th scope="col">Catégorie</th>
-          <th scope="col">Unité</th>
+          <th scope="col">Nom</th>
           <th scope="col">Description</th>
+          <th scope="col">Unité</th>
+          <th scope="col">Actions</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let perso of persoList">
+          <td>{{ perso.created_at | date : 'dd/MM/yyyy'}}</td>
           <td>{{ perso.name }}</td>
-          <td>{{ perso.created_at }}</td>
-          <td>{{ perso.category_id }}</td>
-          <!-- <td>{{ perso.unit }}</td> -->
-          <td>{{ perso.description }}</td>
+          <td style="white-space: pre;">{{ perso.description }}</td>
+          <td>{{ perso.unit_name }}</td>
+          <td><button class="btn btn-outline-dark">Modifier</button><br><button class="btn btn-outline-dark">Supprimer</button></td>
         </tr>
       </tbody>
     </table>

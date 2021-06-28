@@ -1,13 +1,17 @@
 <div class="container">
-    <div>
-    <select class="form-select" aria-label="Select unit">
-        <option selected>Sélectionnez l'unité à convertir</option>
-        <option value="1">kg</option>
-        <option value="2">lb</option>
-      </select>
-    </div>
-    <div>
-        <h2></h2>
+    <div class="row">
+        <div class="col">
+            <label for="converter-kg-lb" class="form-label">Kg :</label>
+            <input type="text" class="form-control" id="converter-kg-lb" [(ngModel)]="kg">
+            <br>
+            <h2>Kg <img src="./../../../assets/Wod_Notes_convert_arrows_one_way.png" alt="converter arrows"> lb : {{ kg | weightConverter: 'lb' }}</h2>
+          </div>
+          <div class="col">
+            <label for="converter-lb-kg" class="form-label">Lb :</label>
+            <input type="text" class="form-control" id="converter-lb-kg" [(ngModel)]="lb">
+            <br>
+            <h2>Lb <img src="./../../../assets/Wod_Notes_convert_arrows_one_way.png" alt="converter arrows"> kg : {{ lb | weightConverter: 'kg' }}</h2>
+          </div>
     </div>
 </div>
 

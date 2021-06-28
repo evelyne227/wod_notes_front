@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./converter.component.scss']
 })
 export class ConverterComponent implements OnInit {
+  kg!: any;
+  lb!: any;
 
   constructor() { }
 
